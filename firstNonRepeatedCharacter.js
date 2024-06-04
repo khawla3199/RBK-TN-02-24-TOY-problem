@@ -10,5 +10,34 @@
  * @returns {String}
  */
 const firstNonRepeatedCharacter = function (string) {
-  // TODO: your solution here
+  var res=''
+for (var i= 0; i< string.length; i++) {
+  var caracter = string[i];
+if(string.indexOf(caracter)===string.lastIndexOf(caracter)){
+  return caracter
+}  
 }
+return ''
+}
+
+
+
+//   var acc=''
+ 
+//   var res = null;
+//   for (var character of string) {
+//       if (
+//           string.indexOf(character)
+//           ===
+//           string.lastIndexOf(character)
+//       ) {
+//           res = character;
+//           break;
+//       }
+//   }
+//   console.log("Input: " + string);
+//   console.log("Non-repeating character: " + res);
+// }
+
+
+
